@@ -1,0 +1,307 @@
+
+/* Variables de disseny: Tema Eco-Sostenible (Blanc i Verd) */
+:root {
+    --bg-fons: #f7fbf8;
+    --bg-blanc: #ffffff;
+    --verd-principal: #2e7d32;
+    --verd-secundari: #4caf50;
+    --verd-fons: #e8f5e9;
+    --text-principal: #2c3e50;
+    --text-secundari: #546e7a;
+    --radi-cantonada: 12px;
+    --ombra-suau: 0 4px 20px rgba(46, 125, 50, 0.08);
+    --ombra-hover: 0 10px 30px rgba(46, 125, 50, 0.15);
+    --transicio: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-fons);
+    color: var(--text-principal);
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--verd-principal);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--verd-secundari);
+    border-radius: 16px 0 16px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transicio);
+}
+
+nav a:hover {
+    color: var(--verd-principal);
+}
+
+.hero {
+    background: var(--bg-blanc);
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    color: var(--verd-principal);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-secundari);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.qui-som-page {
+    padding: 5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.qui-som-content h1 {
+    color: var(--verd-principal);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.qui-som-content p {
+    font-size: 1.1rem;
+    color: var(--text-secundari);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.seccio-blog {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccio-blog-titol {
+    text-align: center;
+    color: var(--verd-principal);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    overflow: hidden;
+    box-shadow: var(--ombra-suau);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transicio);
+    border: 1px solid #f0f0f0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ombra-hover);
+    border-color: var(--verd-secundari);
+}
+
+/* FIX: IMATGES A LES TARGETES (PERFECTAMENT PROPORCIONALS) */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.thumbnail-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-placeholder::before {
+    content: '🌱';
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.card-content {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background: var(--verd-fons);
+    color: var(--verd-principal);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--text-principal);
+}
+
+.card-excerpt {
+    color: var(--text-secundari);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 0.8rem;
+    color: var(--text-secundari);
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.btn-llegir {
+    align-self: flex-start;
+    padding: 0.6rem 1.5rem;
+    background: var(--bg-blanc);
+    color: var(--verd-principal);
+    border: 2px solid var(--verd-principal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transicio);
+    cursor: pointer;
+}
+
+.btn-llegir:hover {
+    background: var(--verd-principal);
+    color: var(--bg-blanc);
+}
+
+/* ARTICLES BLOG PAGES */
+.article-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-header .tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.article-header h1 {
+    font-size: 2.5rem;
+    color: var(--verd-principal);
+    line-height: 1.2;
+}
+
+.article-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    font-size: 1.1rem;
+    color: var(--text-principal);
+}
+
+/* FIX: IMATGES ALS ARTICLES */
+.article-body img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: block;
+    box-shadow: var(--ombra-suau);
+}
+
+footer {
+    background: #1b5e20;
+    padding: 2rem;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
