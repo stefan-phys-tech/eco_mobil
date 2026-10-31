@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacte del Projecte - Eco-Mòbil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eco-Mòbil</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="sobre-nosotros.html">Qui Som</a></li>
+                    <li><a href="impacte-projecte.html">Impacte del projecte</a></li>
+                    <li><a href="enquesta.html">Enquesta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="page-header">
+            <span class="tag">Petjada Ecològica</span>
+            <h1>Impacte Ambiental del Projecte</h1>
+            <p>Com a projecte dedicat a la sostenibilitat tecnològica, hem volgut aplicar un exercici de transparència i calcular la petjada de carboni generada per l'equip de <strong>5 persones</strong> durant els <strong>14 dies</strong> d'investigació, redacció i desenvolupament d'aquest portal web.</p>
+        </div>
+
+        <!-- RESUM KPI PER L'EQUIP DE 5 PERSONES -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-icon">👥</span>
+                <div class="stat-value">5 persones</div>
+                <div class="stat-label">Membres de l'equip</div>
+                <div class="stat-sub">Totes les mètriques individuals es multipliquen per 5</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">⚡</span>
+                <div class="stat-value">49,28 g CO₂</div>
+                <div class="stat-label">Consum elèctric actiu</div>
+                <div class="stat-sub">9,856 g CO₂ per persona (4 h a 16 W de mitjana)</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">🤖</span>
+                <div class="stat-value">837 g CO₂</div>
+                <div class="stat-label">Ús d'IA (Claude 4 Opus)</div>
+                <div class="stat-sub">167,4 g CO₂ per persona (~30.000 tokens/persona)</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">🔍</span>
+                <div class="stat-value">20 g CO₂</div>
+                <div class="stat-label">Cerques al navegador</div>
+                <div class="stat-sub">4 g CO₂ per persona (~20 cerques a 0,2 g/cerca)</div>
+            </div>
+        </div>
+
+        <!-- DESGLOSSAMENT DETALLAT -->
+        <div class="info-grid">
+            <!-- 1. ORDINADOR I CONSUM ELÈCTRIC -->
+            <article class="info-panel">
+                <h2>💻 1. Consum Elèctric de l'Ordinador</h2>
+                <p>Per estimar el consum energètic directe durant les sessions de treball hem pres com a referència un portàtil <strong>Asus Vivobook</strong>.</p>
+                <div class="calc-box">
+                    <p><strong>Potència de la font:</strong> 65 W nominals menys 25 W de la targeta gràfica dedicada (que no s'ha requerit per a ofimàtica i programació web) = <strong>40 W màxims</strong>.</p>
+                    <p><strong>Càrrega mitjana d'ús (40%):</strong> 40 W &times; 0,40 = <strong>16 W totals</strong>.</p>
+                    <p><strong>Energia consumida (4 hores per persona):</strong> 16 W &times; 4 h = <strong>0,064 kWh</strong>.</p>
+                    <p><strong>Mix elèctric a Espanya:</strong> 154 g CO₂ / kWh.</p>
+                </div>
+                <p>Multiplicant el consum per la intensitat de carboni de la xarxa espanyola obtenim <strong>9,856 g de CO₂ per persona</strong>, és a dir, <strong>49,28 g de CO₂</strong> per a tot el grup.</p>
+            </article>
+
+            <!-- 2. FABRICACIÓ I VIDA ÚTIL DEL PORTÀTIL -->
+            <article class="info-panel">
+                <h2>🏭 2. Petjada de Fabricació de l'Ordinador</h2>
+                <p>Segons l'informe ambiental d'Asus, la fabricació d'un portàtil d'aquestes característiques suposa <strong>240 &plusmn; 70 kg de CO₂</strong>. Per imputar la fracció corresponent als <strong>14 dies</strong> d'ús del projecte, comparem dos escenaris:</p>
+                <div class="calc-box">
+                    <p><strong>Opció A — Esperança de vida oficial (4 anys):</strong><br>
+                    Suposa una amortització de <strong>60 &plusmn; 17,5 kg CO₂/any</strong>. Durant els 14 dies d'ús intensiu del projecte, equival a una estimació de <strong>4,29 &plusmn; 1,25 kg CO₂ per persona</strong> (<strong>21,45 kg CO₂</strong> per a l'equip).</p>
+                </div>
+                <div class="calc-box">
+                    <p><strong>Opció B — Vida útil real prolongada (12 anys):</strong><br>
+                    Allargant la vida de l'equip (com un portàtil actual de 7 anys que s'estima que en durarà 12), l'impacte baixa a <strong>20 &plusmn; 5,83 kg CO₂/any</strong>, resultant en <strong>1,429 &plusmn; 0,416 kg CO₂ per persona</strong> (<strong>7,145 kg CO₂</strong> per a l'equip).</p>
+                </div>
+            </article>
+
+            <!-- 3. INTEL·LIGÈNCIA ARTIFICIAL -->
+            <article class="info-panel">
+                <h2>🧠 3. Ús d'Intel·ligència Artificial</h2>
+                <p>Durant el desenvolupament i l'estructuració del contingut s'ha emprat el model <strong>Claude 4 Opus</strong>, l'impacte del qual s'estima en <strong>5,58 g de CO₂ per cada 1.000 tokens</strong> processats.</p>
+                <div class="calc-box">
+                    <p><strong>Què són 1.000 tokens?</strong> Equivalen aproximadament a unes <strong>750 paraules</strong> (sumant les instruccions d'entrada, la lectura dels documents PDF i el codi o text generat).</p>
+                    <p><strong>Estimació del projecte:</strong> Calculant una mitjana d'unes 15 consultes de treball i maquetació per integrant (~2.000 tokens per interacció, és a dir, uns <strong>30.000 tokens per persona</strong>):</p>
+                    <p>30 &times; 5,58 g = <strong>167,4 g CO₂ per persona</strong> (<strong>837 g CO₂</strong> per als 5 membres).</p>
+                </div>
+            </article>
+
+            <!-- 4. SERVIDORS I CERQUES AL NAVEGADOR -->
+            <article class="info-panel">
+                <h2>🌐 4. Servidors i Cerques Web</h2>
+                <p>Pel que fa a l'emmagatzematge al núvol (com Google Drive), davant la impossibilitat de mesurar amb exactitud la despesa dels servidors remots, hem prioritzat el <strong>treball local (offline)</strong> per minimitzar les sincronitzacions contínues.</p>
+                <div class="calc-box">
+                    <p><strong>Cerques en navegadors (Google / Brave):</strong> Cada consulta emet aproximadament <strong>0,2 g de CO₂</strong>.</p>
+                    <p><strong>Volum de recerca documental:</strong> Estimant unes <strong>20 cerques per persona</strong> per contrastar fonts oficials i normatives:</p>
+                    <p>20 cerques &times; 0,2 g = <strong>4 g CO₂ per persona</strong> (<strong>20 g CO₂</strong> en total per a l'equip).</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- FÓRMULA GLOBAL I COMPARATIVA D'ESCENARIS -->
+        <section class="calc-formula">
+            <h2>Fórmula d'Impacte Total de l'Equip (5 Persones)</h2>
+            <div class="formula-eq">
+                Total = 5 &times; (Fabricació de l'ordinador + 9,856 g [Electricitat] + 167,4 g [IA] + 4 g [Cerques])
+            </div>
+
+            <div class="scenario-comparison">
+                <div class="scenario-box">
+                    <h3>Escenari Estàndard (Vida útil de 4 anys)</h3>
+                    <div class="scenario-total">22,36 &plusmn; 6,25 kg CO₂</div>
+                    <p><strong>4,47 kg CO₂ per persona.</strong> Si renovem els portàtils cada 4 anys, la fabricació del maquinari representa més del <strong>95,9%</strong> de totes les emissions del projecte.</p>
+                </div>
+                <div class="scenario-box recommended">
+                    <h3>🌱 Escenari Sostenible (Vida útil de 12 anys)</h3>
+                    <div class="scenario-total">8,05 &plusmn; 2,08 kg CO₂</div>
+                    <p><strong>1,61 kg CO₂ per persona.</strong> Allargar la vida útil dels nostres ordinadors fins als 12 anys redueix en un <strong>64%</strong> la petjada total de carboni del projecte, demostrant que la prevenció i la durabilitat són la clau.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRÀFIC COMPARATIU DEL PES DE CADA FACTOR -->
+        <section class="survey-card">
+            <div class="survey-card-header">
+                <h2>Distribució del pes ambiental per persona (Escenari Sostenible - 12 anys)</h2>
+                <span class="survey-badge">1.610,26 g CO₂ / persona</span>
+            </div>
+            <div class="bar-list">
+                <div class="bar-item">
+                    <div class="bar-label-row">
+                        <span>🏭 Amortització de fabricació del portàtil (14 dies sobre 12 anys)</span>
+                        <span>1.429 g CO₂ (88,7%)</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill c-green" style="width: 88.7%;"></div></div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label-row">
+                        <span>🧠 Ús d'Intel·ligència Artificial (Claude 4 Opus - ~30k tokens)</span>
+                        <span>167,4 g CO₂ (10,4%)</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill c-orange" style="width: 10.4%;"></div></div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label-row">
+                        <span>⚡ Consum elèctric directe del portàtil (4 hores a 16 W)</span>
+                        <span>9,856 g CO₂ (0,6%)</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill c-blue" style="width: 3%;"></div></div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label-row">
+                        <span>🔍 Cerques en navegadors web (20 cerques a Google/Brave)</span>
+                        <span>4 g CO₂ (0,3%)</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill c-teal" style="width: 1.5%;"></div></div>
+                </div>
+            </div>
+            <div class="survey-insight">
+                <strong>Conclusió clau:</strong> Fins i tot en un projecte digital amb ús d'IA i recerca web, prop del <strong>90% de l'impacte ambiental</strong> prové de la fabricació física dels ordinadors que utilitzem. Això confirma a escala real el missatge principal d'<strong>Eco-Mòbil</strong>: conservar i reparar els nostres aparells durant més anys és l'acció ecològica més efectiva.
+            </div>
+        </section>
+
+        <!-- REFERÈNCIES -->
+        <div class="article-referencies">
+            <h3>Referències i fonts del càlcul:</h3>
+            <ul>
+                <li>Intensitat de carboni de l'electricitat a Espanya (World Power Monitor): <a href="https://worldpowermonitor.com/countries/spain/" target="_blank" rel="noopener noreferrer">https://worldpowermonitor.com/countries/spain/</a></li>
+                <li>Informe de petjada de carboni del portàtil Asus Vivobook (Product Carbon Footprint Report S5406S): <a href="https://esg.asus.com/files/carbon_footprint/Product-Carbon-Footprint-Report_S5406S.pdf" target="_blank" rel="noopener noreferrer">https://esg.asus.com/files/carbon_footprint/Product-Carbon-Footprint-Report_S5406S.pdf</a></li>
+                <li>Petjada de carboni d'Anthropic Claude (AI Impact Calculator): <a href="https://aiimpactcalculator.com/blog/anthropic-carbon-footprint-how-green-is-claude" target="_blank" rel="noopener noreferrer">https://aiimpactcalculator.com/blog/anthropic-carbon-footprint-how-green-is-claude</a></li>
+                <li>Impacte ambiental per cerca a Google (Carbon Footprint of Google Search): <a href="https://www.carbonfootprintof.com/search-engine/google-search" target="_blank" rel="noopener noreferrer">https://www.carbonfootprintof.com/search-engine/google-search</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolupat per a un futur sostenible. &copy; 2026 Eco-Mòbil</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

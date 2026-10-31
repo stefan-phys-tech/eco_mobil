@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultats de l'Enquesta - Eco-Mòbil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eco-Mòbil</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="sobre-nosotros.html">Qui Som</a></li>
+                    <li><a href="impacte-projecte.html">Impacte del projecte</a></li>
+                    <li><a href="enquesta.html">Enquesta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="page-header">
+            <span class="tag">Estudi Ciutadà</span>
+            <h1>Què fem amb els nostres mòbils vells?</h1>
+            <p>Hem realitzat una enquesta pròpia amb <strong>63 participants</strong> per conèixer de primera mà els hàbits d'acumulació de mòbils "dorments", el grau de coneixement sobre el reciclatge a Catalunya i la percepció ciutadana sobre l'impacte dels residus electrònics.</p>
+        </div>
+
+        <!-- DESTACATS PRINCIPALS DE L'ENQUESTA -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-icon">📱</span>
+                <div class="stat-value">87,3%</div>
+                <div class="stat-label">Guarda mòbils dorments</div>
+                <div class="stat-sub">Un 30,1% acumula 3 o més telèfons inactius a casa</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">🛠️</span>
+                <div class="stat-value">61,9%</div>
+                <div class="stat-label">Els guarda "per si de cas"</div>
+                <div class="stat-sub">El motiu principal és tenir un recanvi si es trenca l'actual</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">🌍</span>
+                <div class="stat-value">87,3%</div>
+                <div class="stat-label">Desconeix a fons el tràfic il·legal</div>
+                <div class="stat-sub">Només un 12,7% afirma conèixer bé l'exportació il·legal</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon">♻️</span>
+                <div class="stat-value">71,4%</div>
+                <div class="stat-label">No va mai a la deixalleria</div>
+                <div class="stat-sub">Un 42,9% sap on és però no hi ha anat mai i un 28,6% no sap on és</div>
+            </div>
+        </div>
+
+        <div class="survey-grid">
+            <!-- PREGUNTA 1 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>1. Quants mòbils inútils o 'dorments' tens guardats actualment a casa?</h2>
+                    <span class="survey-badge">63 respostes</span>
+                </div>
+                <div class="chart-layout">
+                    <div class="donut-chart" style="background: conic-gradient(#e53935 0% 57.1%, #fb8c00 57.1% 79.3%, #2e7d32 79.3% 87.3%, #1e88e5 87.3% 100%);">
+                        <div class="donut-hole">
+                            <strong>87,3%</strong>
+                            <span>en té almenys 1</span>
+                        </div>
+                    </div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#e53935;"></i>Entre 1 i 2 mòbils</span>
+                                <span>57,1% (36)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-red" style="width: 57.1%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#fb8c00;"></i>Entre 3 i 5 mòbils</span>
+                                <span>22,2% (14)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-orange" style="width: 22.2%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#1e88e5;"></i>Cap mòbil guardat</span>
+                                <span>12,7% (8)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-blue" style="width: 12.7%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#2e7d32;"></i>Més de 5 mòbils</span>
+                                <span>7,9% (5)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-green" style="width: 7.9%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Les dades confirmen plenament el fenomen dels "mòbils dorments": gairebé 9 de cada 10 llars guarden dispositius en desús i un <strong>30,1% dels enquestats acumula 3 o més telèfons als calaixos</strong>, retenint minerals estratègics fora de la cadena de reciclatge.
+                </div>
+            </article>
+
+            <!-- PREGUNTA 2 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>2. Quin és el motiu principal pel qual conserves aquests mòbils a casa?</h2>
+                    <span class="survey-badge">63 respostes (opció múltiple)</span>
+                </div>
+                <div class="bar-list">
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Per si de cas es trenca el principal</span>
+                            <span>39 respostes (61,9%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-green" style="width: 61.9%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Altres motius</span>
+                            <span>20 respostes (31,7%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-teal" style="width: 31.7%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Per mandra</span>
+                            <span>15 respostes (23,8%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-orange" style="width: 23.8%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Perquè no sé on portar-lo</span>
+                            <span>15 respostes (23,8%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-red" style="width: 23.8%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Per guardar dades o fotografies personals</span>
+                            <span>12 respostes (19,0%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-blue" style="width: 19.0%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Per valor sentimental</span>
+                            <span>9 respostes (14,3%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-purple" style="width: 14.3%;"></div></div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Tot i que la precaució davant d'una avaria del mòbil principal lidera les respostes (<strong>61,9%</strong>), és molt significatiu que gairebé una quarta part no el porti a reciclar per <strong>desconeixement dels punts de recollida (23,8%)</strong> o per <strong>mandra (23,8%)</strong>, sumat a un <strong>19%</strong> que tem perdre les seves dades o fotografies personals.
+                </div>
+            </article>
+
+            <!-- PREGUNTA 3 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>3. Saps aproximadament quin percentatge de residus d'aparells electrònics es recull formalment a Catalunya?</h2>
+                    <span class="survey-badge">63 respostes</span>
+                </div>
+                <div class="chart-layout">
+                    <div class="donut-chart" style="background: conic-gradient(#8e24aa 0% 54%, #e53935 54% 76.2%, #1e88e5 76.2% 95.2%, #fb8c00 95.2% 98.4%, #2e7d32 98.4% 100%);">
+                        <div class="donut-hole">
+                            <strong>54%</strong>
+                            <span>No ho sap</span>
+                        </div>
+                    </div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#8e24aa;"></i>No ho sé</span>
+                                <span>54,0% (34)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-purple" style="width: 54.0%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#e53935;"></i>Entre el 25% i el 50%</span>
+                                <span>22,2% (14)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-red" style="width: 22.2%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#1e88e5;"></i>Menys del 25%</span>
+                                <span>19,0% (12)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-blue" style="width: 19.0%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#fb8c00;"></i>Entre el 51% i el 75% (Dada real a Catalunya: 54,7%)</span>
+                                <span>3,2% (2)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-orange" style="width: 3.2%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#2e7d32;"></i>Més del 75%</span>
+                                <span>1,6% (1)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-green" style="width: 1.6%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Més de la meitat dels participants (<strong>54%</strong>) admet desconèixer la xifra de recollida de RAEE a Catalunya, i només un <strong>3,2%</strong> encerta la franja real del 54,7% (tot i que a escala mundial la taxa formal sí que cau fins al 22,2%).
+                </div>
+            </article>
+
+            <!-- PREGUNTA 4 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>4. Quins materials creus que es perden més sovint i es recuperen pitjor en el reciclatge dels mòbils?</h2>
+                    <span class="survey-badge">63 respostes (opció múltiple)</span>
+                </div>
+                <div class="bar-list">
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Minerals crítics i terres rares (gal·li, germani, neodimi...)</span>
+                            <span>36 respostes (57,1%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-green" style="width: 57.1%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Plàstics barrejats</span>
+                            <span>26 respostes (41,3%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-orange" style="width: 41.3%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Vidre de la pantalla</span>
+                            <span>14 respostes (22,2%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-blue" style="width: 22.2%;"></div></div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label-row">
+                            <span>Metalls preciosos com l'or i la plata</span>
+                            <span>13 respostes (20,6%)</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill c-red" style="width: 20.6%;"></div></div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Un <strong>57,1%</strong> identifica correctament els <strong>minerals crítics i terres rares</strong> (amb rendiments de reciclatge inferiors a l'1%) i un <strong>41,3%</strong> assenyala els plàstics barrejats (que sovint s'incineren). En canvi, un 20,6% creu erròniament que l'or i la plata es perden, quan en realitat s'extreuen amb eficiències del 70% al 95%.
+                </div>
+            </article>
+
+            <!-- PREGUNTA 5 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>5. Coneixes l'existència de l'exportació il·legal de residus electrònics cap a països en desenvolupament?</h2>
+                    <span class="survey-badge">63 respostes</span>
+                </div>
+                <div class="chart-layout">
+                    <div class="donut-chart" style="background: conic-gradient(#e53935 0% 50.8%, #fb8c00 50.8% 87.3%, #1e88e5 87.3% 100%);">
+                        <div class="donut-hole">
+                            <strong>87,3%</strong>
+                            <span>No ho coneix a fons</span>
+                        </div>
+                    </div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#e53935;"></i>N'he sentit a parlar superficialment</span>
+                                <span>50,8% (32)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-red" style="width: 50.8%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#fb8c00;"></i>No en tenia ni idea</span>
+                                <span>36,5% (23)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-orange" style="width: 36.5%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#1e88e5;"></i>Sí, ho conec bé</span>
+                                <span>12,7% (8)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-blue" style="width: 12.7%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Aquesta pregunta posa de manifest la necessitat divulgativa del blog: un <strong>36,5% desconeixia per complet</strong> el tràfic il·legal d'escombraries electròniques cap a l'Àfrica i l'Àsia, i un <strong>50,8%</strong> només n'havia sentit a parlar de forma superficial.
+                </div>
+            </article>
+
+            <!-- PREGUNTA 6 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>6. Segons la normativa europea, quina és la prioritat de la jerarquia de residus?</h2>
+                    <span class="survey-badge">63 respostes</span>
+                </div>
+                <div class="chart-layout">
+                    <div class="donut-chart" style="background: conic-gradient(#fb8c00 0% 30.2%, #e53935 30.2% 58.8%, #1e88e5 58.8% 82.6%, #2e7d32 82.6% 100%);">
+                        <div class="donut-hole">
+                            <strong>30,2%</strong>
+                            <span>Prevenir (Correcta)</span>
+                        </div>
+                    </div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#fb8c00;"></i>Prevenir la generació (Prioritat 1 a la UE)</span>
+                                <span>30,2% (19)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-orange" style="width: 30.2%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#e53935;"></i>Reutilitzar</span>
+                                <span>28,6% (18)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-red" style="width: 28.6%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#1e88e5;"></i>Reciclar</span>
+                                <span>23,8% (15)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-blue" style="width: 23.8%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#2e7d32;"></i>Eliminar de manera segura</span>
+                                <span>17,5% (11)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-green" style="width: 17.5%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Les respostes estan molt fragmentades. Només un <strong>30,2%</strong> sap que la màxima prioritat de la Unió Europea és <strong>prevenir la generació de residus</strong> (mitjançant el disseny ecològic i la durabilitat), per davant de reutilitzar (28,6%) i reciclar (23,8%).
+                </div>
+            </article>
+
+            <!-- PREGUNTA 7 -->
+            <article class="survey-card">
+                <div class="survey-card-header">
+                    <h2>7. Saps on està situat el punt de recollida o deixalleria més proper per portar els teus mòbils vells?</h2>
+                    <span class="survey-badge">63 respostes</span>
+                </div>
+                <div class="chart-layout">
+                    <div class="donut-chart" style="background: conic-gradient(#e53935 0% 42.9%, #fb8c00 42.9% 71.5%, #1e88e5 71.5% 100%);">
+                        <div class="donut-hole">
+                            <strong>42,9%</strong>
+                            <span>No hi ha anat mai</span>
+                        </div>
+                    </div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#e53935;"></i>Sé on és però mai hi he anat</span>
+                                <span>42,9% (27)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-red" style="width: 42.9%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#fb8c00;"></i>No ho sé</span>
+                                <span>28,6% (18)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-orange" style="width: 28.6%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label-row">
+                                <span><i class="legend-dot" style="background:#1e88e5;"></i>Sí, hi vaig sovint</span>
+                                <span>28,6% (18)</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill c-blue" style="width: 28.6%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-insight">
+                    <strong>Anàlisi dels resultats:</strong> Aquesta dada explica per què tants aparells es queden als calaixos: tot i que el <strong>71,5% sap on té una deixalleria o punt verd</strong>, només un <strong>28,6% hi acudeix amb regularitat</strong>, mentre que el 42,9% reconeix que no hi ha anat mai i un altre 28,6% ni tan sols sap on es troba.
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolupat per a un futur sostenible. &copy; 2026 Eco-Mòbil</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

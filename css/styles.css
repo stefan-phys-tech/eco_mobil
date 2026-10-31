@@ -1,0 +1,722 @@
+
+/* Variables de disseny: Tema Eco-Sostenible (Blanc i Verd) */
+:root {
+    --bg-fons: #f7fbf8;
+    --bg-blanc: #ffffff;
+    --verd-principal: #2e7d32;
+    --verd-secundari: #4caf50;
+    --verd-fons: #e8f5e9;
+    --text-principal: #2c3e50;
+    --text-secundari: #546e7a;
+    --radi-cantonada: 12px;
+    --ombra-suau: 0 4px 20px rgba(46, 125, 50, 0.08);
+    --ombra-hover: 0 10px 30px rgba(46, 125, 50, 0.15);
+    --transicio: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-fons);
+    color: var(--text-principal);
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--verd-principal);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--verd-secundari);
+    border-radius: 16px 0 16px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transicio);
+}
+
+nav a:hover {
+    color: var(--verd-principal);
+}
+
+.hero {
+    background: var(--bg-blanc);
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    color: var(--verd-principal);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-secundari);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.qui-som-page {
+    padding: 5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.qui-som-content h1 {
+    color: var(--verd-principal);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.qui-som-content p {
+    font-size: 1.1rem;
+    color: var(--text-secundari);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.seccio-blog {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccio-blog-titol {
+    text-align: center;
+    color: var(--verd-principal);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    overflow: hidden;
+    box-shadow: var(--ombra-suau);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transicio);
+    border: 1px solid #f0f0f0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ombra-hover);
+    border-color: var(--verd-secundari);
+}
+
+/* FIX: IMATGES A LES TARGETES (PERFECTAMENT PROPORCIONALS) */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.thumbnail-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-placeholder::before {
+    content: '🌱';
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.card-content {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background: var(--verd-fons);
+    color: var(--verd-principal);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--text-principal);
+}
+
+.card-excerpt {
+    color: var(--text-secundari);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 0.8rem;
+    color: var(--text-secundari);
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.btn-llegir {
+    align-self: flex-start;
+    padding: 0.6rem 1.5rem;
+    background: var(--bg-blanc);
+    color: var(--verd-principal);
+    border: 2px solid var(--verd-principal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transicio);
+    cursor: pointer;
+}
+
+.btn-llegir:hover {
+    background: var(--verd-principal);
+    color: var(--bg-blanc);
+}
+
+/* ARTICLES BLOG PAGES */
+.article-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-header .tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.article-header h1 {
+    font-size: 2.5rem;
+    color: var(--verd-principal);
+    line-height: 1.2;
+}
+
+.article-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    font-size: 1.1rem;
+    color: var(--text-principal);
+}
+
+/* FIX: IMATGES ALS ARTICLES */
+.article-body img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: block;
+    box-shadow: var(--ombra-suau);
+}
+
+/* SECCIÓ DE REFERÈNCIES ALS ARTICLES */
+.article-referencies {
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    background: var(--verd-fons);
+    border-left: 4px solid var(--verd-principal);
+    border-radius: 0 var(--radi-cantonada) var(--radi-cantonada) 0;
+}
+
+.article-referencies h2,
+.article-referencies h3 {
+    font-size: 1.2rem;
+    color: var(--verd-principal);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.article-referencies ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.article-referencies li {
+    font-size: 0.95rem;
+    color: var(--text-secundari);
+    line-height: 1.5;
+}
+
+.article-referencies a {
+    color: var(--verd-principal);
+    text-decoration: none;
+    word-break: break-word;
+    transition: var(--transicio);
+}
+
+.article-referencies a:hover {
+    color: var(--verd-secundari);
+    text-decoration: underline;
+}
+
+/* SECCIÓ IMPACTE DEL PROJECTE I ENQUESTA */
+.page-section {
+    padding: 4rem 2rem 5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 3.5rem;
+}
+
+.page-header .tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    color: var(--verd-principal);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: var(--text-secundari);
+    line-height: 1.7;
+}
+
+/* KPI STATS GRID */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    padding: 1.8rem 1.5rem;
+    box-shadow: var(--ombra-suau);
+    border: 1px solid #e8f5e9;
+    text-align: center;
+    transition: var(--transicio);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--verd-principal), var(--verd-secundari));
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ombra-hover);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.stat-value {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--verd-principal);
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-principal);
+    margin-bottom: 0.3rem;
+}
+
+.stat-sub {
+    font-size: 0.82rem;
+    color: var(--text-secundari);
+}
+
+/* PANELS & CARDS DE DETALL */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-panel {
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    padding: 2.2rem;
+    box-shadow: var(--ombra-suau);
+    border: 1px solid #eef5ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-panel h2 {
+    font-size: 1.35rem;
+    color: var(--verd-principal);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.info-panel p {
+    color: var(--text-secundari);
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+}
+
+.calc-box {
+    background: var(--bg-fons);
+    border: 1px solid #dcedc8;
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin: 0.8rem 0;
+    font-size: 0.93rem;
+}
+
+.calc-box strong {
+    color: var(--verd-principal);
+}
+
+.calc-formula {
+    background: #1b5e20;
+    color: #ffffff;
+    border-radius: var(--radi-cantonada);
+    padding: 2.2rem;
+    margin: 2.5rem 0;
+    text-align: center;
+    box-shadow: var(--ombra-hover);
+}
+
+.calc-formula h2 {
+    color: #a5d6a7;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.calc-formula .formula-eq {
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.scenario-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.scenario-box {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 10px;
+    padding: 1.4rem;
+}
+
+.scenario-box.recommended {
+    background: rgba(76, 175, 80, 0.28);
+    border: 2px solid #81c784;
+}
+
+.scenario-box h3 {
+    color: #e8f5e9;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.scenario-box .scenario-total {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0.4rem 0;
+}
+
+.scenario-box p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* GRÀFICS DE L'ENQUESTA I VISUALITZACIÓ DE DADES */
+.survey-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.survey-card {
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    padding: 2.2rem;
+    box-shadow: var(--ombra-suau);
+    border: 1px solid #eef5ef;
+}
+
+.survey-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.survey-card-header h2 {
+    font-size: 1.3rem;
+    color: var(--text-principal);
+    line-height: 1.4;
+    flex: 1;
+}
+
+.survey-badge {
+    background: var(--verd-fons);
+    color: var(--verd-principal);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.chart-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2.2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .chart-layout {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.donut-chart {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 0 auto;
+}
+
+.donut-hole {
+    width: 112px;
+    height: 112px;
+    background: var(--bg-blanc);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.donut-hole strong {
+    font-size: 1.35rem;
+    color: var(--verd-principal);
+    line-height: 1.1;
+}
+
+.donut-hole span {
+    font-size: 0.72rem;
+    color: var(--text-secundari);
+    margin-top: 2px;
+}
+
+.bar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    width: 100%;
+}
+
+.bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.bar-label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-principal);
+    gap: 0.5rem;
+}
+
+.bar-label-row span:last-child {
+    color: var(--verd-principal);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.bar-track {
+    width: 100%;
+    height: 12px;
+    background: #edf5ee;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--verd-principal), var(--verd-secundari));
+}
+
+.bar-fill.c-blue { background: #1e88e5; }
+.bar-fill.c-red { background: #e53935; }
+.bar-fill.c-orange { background: #fb8c00; }
+.bar-fill.c-green { background: #2e7d32; }
+.bar-fill.c-purple { background: #8e24aa; }
+.bar-fill.c-teal { background: #00897b; }
+
+.legend-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.survey-insight {
+    margin-top: 1.5rem;
+    padding: 1rem 1.3rem;
+    background: var(--bg-fons);
+    border-left: 4px solid var(--verd-secundari);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: var(--text-secundari);
+}
+
+.survey-insight strong {
+    color: var(--text-principal);
+}
+
+footer {
+    background: #1b5e20;
+    padding: 2rem;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
