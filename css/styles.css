@@ -719,4 +719,131 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+/* STICKERS I TARGETES D'EQUIP (QUI SOM) */
+.sticker-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 1.2rem 0;
+}
+
+.sticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--bg-blanc);
+    color: var(--verd-principal);
+    border: 2px solid var(--verd-principal);
+    border-radius: 999px;
+    padding: 0.35rem 0.95rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: 2px 3px 0px rgba(46, 125, 50, 0.18);
+    text-decoration: none;
+    transition: var(--transicio);
+}
+
+.sticker:hover {
+    transform: translateY(-2px) rotate(-1deg);
+    background: var(--verd-fons);
+    color: var(--verd-principal);
+}
+
+.sticker.sticker-solid {
+    background: var(--verd-principal);
+    color: var(--bg-blanc);
+}
+
+.sticker.sticker-solid:hover {
+    background: var(--verd-secundari);
+    border-color: var(--verd-secundari);
+    color: var(--bg-blanc);
+}
+
+.sticker.sticker-soft {
+    background: var(--verd-fons);
+    border-color: #a5d6a7;
+    color: var(--verd-principal);
+}
+
+.team-stickers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.member-sticker-card {
+    background: var(--bg-blanc);
+    border: 2px solid #c8e6c9;
+    border-radius: 14px;
+    padding: 1.3rem 1.4rem;
+    box-shadow: 3px 4px 0px rgba(46, 125, 50, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: var(--transicio);
+}
+
+.member-sticker-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--verd-principal);
+}
+
+.member-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--verd-principal);
+}
+
+.member-role {
+    font-size: 0.92rem;
+    color: var(--text-secundari);
+    line-height: 1.5;
+}
+
+/* TAULA I COMPARATIVA NETA D'IMPACTE */
+.impact-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: var(--bg-blanc);
+    border-radius: var(--radi-cantonada);
+    overflow: hidden;
+    box-shadow: var(--ombra-suau);
+    border: 1px solid #e0e0e0;
+}
+
+.impact-summary-table th {
+    background: var(--verd-fons);
+    color: var(--verd-principal);
+    text-align: left;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+.impact-summary-table td {
+    padding: 0.9rem 1.2rem;
+    border-top: 1px solid #eef5ef;
+    font-size: 0.95rem;
+    color: var(--text-principal);
+}
+
+.impact-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.impact-compare-card {
+    background: var(--bg-blanc);
+    border: 1px solid #dcedc8;
+    border-left: 4px solid var(--verd-principal);
+    border-radius: 10px;
+    padding: 1.3rem 1.5rem;
+    box-shadow: var(--ombra-suau);
+}
+
+
 
